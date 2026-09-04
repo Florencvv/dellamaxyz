@@ -6,7 +6,7 @@ import { BackedBy } from './components/BackedBy'
 import { Features } from './components/Features'
 import { Marquee } from './components/Marquee'
 import { Feather } from './components/Feather'
-import { XIcon, X_URL } from './components/XIcon'
+import { XIcon, X_URL, TelegramIcon, TG_URL } from './components/XIcon'
 import avatar from './assets/llama-avatar.jpg'
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -105,6 +105,15 @@ export default function App() {
                 className="grid size-9 place-items-center rounded-xl border border-ink/20 text-ink/70 transition-all duration-300 hover:-translate-y-0.5 hover:border-ink hover:bg-ink hover:text-rh"
               >
                 <XIcon className="size-4" />
+              </a>
+              <a
+                href={TG_URL}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="DelLama on Telegram"
+                className="grid size-9 place-items-center rounded-xl border border-ink/20 text-ink/70 transition-all duration-300 hover:-translate-y-0.5 hover:border-ink hover:bg-ink hover:text-rh"
+              >
+                <TelegramIcon className="size-4.5" />
               </a>
               <p className="text-[12.5px] font-medium text-ink/45">
                 © {new Date().getFullYear()} DelLama

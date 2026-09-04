@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Feather } from './Feather'
-import { XIcon, X_URL } from './XIcon'
+import { XIcon, X_URL, TelegramIcon, TG_URL } from './XIcon'
 import avatar from '../assets/llama-avatar.jpg'
 
 const LINKS = ['Swap', 'Trade', 'Terminal', 'Portfolio']
@@ -67,9 +67,18 @@ export function Navbar() {
             target="_blank"
             rel="noreferrer"
             aria-label="DelLama on X"
-            className="group grid size-9 place-items-center rounded-full border border-ink/15 bg-white/40 text-ink transition-all duration-300 hover:-translate-y-0.5 hover:bg-ink hover:text-rh active:scale-95"
+            className="grid size-9 place-items-center rounded-full border border-ink/15 bg-white/40 text-ink transition-all duration-300 hover:-translate-y-0.5 hover:bg-ink hover:text-rh active:scale-95"
           >
             <XIcon className="size-4" />
+          </a>
+          <a
+            href={TG_URL}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="DelLama on Telegram"
+            className="grid size-9 place-items-center rounded-full border border-ink/15 bg-white/40 text-ink transition-all duration-300 hover:-translate-y-0.5 hover:bg-ink hover:text-rh active:scale-95"
+          >
+            <TelegramIcon className="size-4.5" />
           </a>
           <span
             aria-hidden="true"
