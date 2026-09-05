@@ -8,3 +8,6 @@ dist-ssr/
 .vscode/
 .idea/
 .DS_Store
+
+# separate project, not part of this site
+robbinpredict/
