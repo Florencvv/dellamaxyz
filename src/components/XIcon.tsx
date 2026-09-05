@@ -1,4 +1,4 @@
-export const X_URL = 'https://x.com/DelLamaOnHood'
+export const X_URL = 'https://x.com/DelLamadotxyz'
 
 export function XIcon({ className }: { className?: string }) {
   return (
